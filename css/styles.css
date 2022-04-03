@@ -139,4 +139,10 @@ body {
     .navlinks {
         display: none;
     }
+
+    .header-top img {
+        max-width: 80%;
+        min-width: 100px;
+        margin-left: 10px;
+    }
 }
