@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: basic-sans, sans-serif;
+    background: url("../images/bgimg.jpeg") no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #DCE2E3;
+    max-height: 110px;
+}
+
+.header-top img {
+    display: flex;
+    max-height: 90px;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.searchbar {
+    max-width: 500px;
+    margin-top: 3vh;
+    margin-bottom: auto;
+    margin-right: 50px;
+}
+
+.search-icon i {
+    position: absolute;
+}
+
+.search-icon {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-icons .mobile {
+    display: none;
+}
+
+.icon {
+    padding: 10px;
+    color: #410A20;
+    min-width: 20px;
+    text-align: center;
+}
+
+.searchbar-form {
+    width: 46vh;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #410A20;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #0A3641;
+    font-size: 18px;
+    max-height: 50px;
+    min-height: 40px;
+}
+
+.navbar .mobile {
+    display: none;
+}
+
+.navlinks {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-i a {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+} 
+
+.logo-wt {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    max-width: 100vh;
+    align-items: flex-end;
+}
+
+.logo-wt img {
+    position: fixed;
+    bottom: 100px;
+    width: 25%;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .searchbar {
+        display: none;
+    }
+
+    .header-icons .mobile {
+        display: block
+    }
+
+    .logo-wt img {
+        width: 30%;
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .logo-wt img {
+        width: 50%;
+    }
+
+    .navbar .mobile {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .navlinks {
+        display: none;
+    }
+}
