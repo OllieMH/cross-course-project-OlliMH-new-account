@@ -17,6 +17,10 @@ h1 {
     color: #0A3641;
 }
 
+#h1home {
+    opacity: 0;
+}
+
 .header-top {
     display: flex;
     flex-direction: row;
@@ -133,9 +137,8 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 15px;
+    gap: 20px;
+    flex: 1;
 }
 
 .prodcontent h2 {
@@ -144,11 +147,36 @@ h1 {
     margin-bottom: 0;
 }
 
-.prodcontent a {
+.prodbox a {
     text-decoration: none;
     color: #0A3641;
 }
 
+.prodbox img {
+    width: 275px;
+}
+
+/*Jacket page*/
+.jacketcontent {
+    display: flex;
+    flex: row wrap;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    gap: 30px;
+}
+
+.jacketimg {
+    flex-basis: auto;
+}
+
+.jacketbtns {
+    flex-basis: auto;
+}
+
+.jackettxt {
+    flex-basis: 25%;
+}
 @media only screen and (max-width: 1200px) {
     
     .searchbar {
@@ -164,10 +192,20 @@ h1 {
         min-width: 300px;
     }
 
-    .prodcontent img {
-        max-width: 200px;
-        min-width: 120px;
+    .prodcontent {
+        flex-wrap: wrap;
     }
+
+    .prodcontent h2 {
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    .prodbox img {
+        width: 300px;
+        margin: 0px 50px;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -193,9 +231,14 @@ h1 {
         margin-left: 10px;
     }
 
-    .prodcontent img {
-        max-width: 120px;
-        min-width: 80px;
+    .prodcontent h2 {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .prodbox img {
+        width: 200px;
+        margin: 0px 20px;
     }
 
 }
