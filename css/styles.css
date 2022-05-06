@@ -1,9 +1,20 @@
+/*Common css*/
+
 body {
     margin: 0;
     font-family: basic-sans, sans-serif;
+}
+
+#home {
     background: url("../images/bgimg.jpeg") no-repeat center top;
     background-size: cover;
     height: 100vh;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #0A3641;
 }
 
 .header-top {
@@ -92,6 +103,8 @@ body {
     text-decoration: none;
 } 
 
+/*Front page*/
+
 .logo-wt {
     display: flex;
     margin-left: auto;
@@ -107,9 +120,32 @@ body {
     width: 25%;
 }
 
-h1 {
-    margin-top: 50px;
+/*Products page*/
+
+#products {
+    background: url("../images/bgimg_blur.png") no-repeat center top;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.prodcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px;
+}
+
+.prodcontent h2 {
+    background-color: #fcfdfc;
+    font-size: large;
+    margin-bottom: 0;
+}
+
+.prodcontent a {
+    text-decoration: none;
     color: #0A3641;
 }
 
@@ -126,6 +162,11 @@ h1 {
     .logo-wt img {
         width: 30%;
         min-width: 300px;
+    }
+
+    .prodcontent img {
+        max-width: 200px;
+        min-width: 120px;
     }
 }
 
@@ -151,4 +192,10 @@ h1 {
         min-width: 100px;
         margin-left: 10px;
     }
+
+    .prodcontent img {
+        max-width: 120px;
+        min-width: 80px;
+    }
+
 }
