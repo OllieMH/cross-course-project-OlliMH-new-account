@@ -80,7 +80,7 @@ h1 {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     background-color: #0A3641;
     font-size: 18px;
@@ -198,6 +198,50 @@ h1 {
     order: 4;
 }
 
+/*About us page*/
+
+#aboutus {
+    background: url("../images/bg2.png") no-repeat center top;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.aboutcontent{
+    margin-left: 45%;
+    margin-right: auto;
+    width: 35%;
+}
+
+.aboutcontent h1 {
+    text-align: left;
+}
+
+.abouttxt {
+    margin-left: 0px;
+}
+
+/*Checkout success page*/
+
+#checkoutsuccess {
+    background: url("../images/bgimg_blur.png") no-repeat;
+    background-size: cover;
+    min-height: 130vh;
+    overflow: hidden;
+}
+
+.checkoutsuccontent {
+    text-align: center;
+    color: #0A3641;
+    margin-top: 150px;
+}
+
+/*Contact Page */
+
+.contactcontent {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 @media only screen and (max-width: 1200px) {
     
     .searchbar {
@@ -241,6 +285,11 @@ h1 {
 
     .line {
         display: none;
+    }
+
+    .aboutcontent {
+        width: 45%;
+
     }
 }
 
@@ -290,6 +339,15 @@ h1 {
 
     .jackettxt {
         order: 3
+    }
+
+    .aboutcontent {
+        margin-left: auto;
+        width: 70%;
+    }
+
+    .aboutcontent h1 {
+        text-align: center;
     }
 
 }
