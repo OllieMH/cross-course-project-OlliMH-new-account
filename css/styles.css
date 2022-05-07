@@ -159,24 +159,45 @@ h1 {
 /*Jacket page*/
 .jacketcontent {
     display: flex;
-    flex: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 80%;
-    margin: auto;
-    gap: 30px;
-}
-
-.jacketimg {
-    flex-basis: auto;
+    max-width: 90%;
+    margin: 75px auto;
 }
 
 .jacketbtns {
-    flex-basis: auto;
+    text-align: center;
+    order: 2;
+    margin-left: 75px;
 }
 
-.jackettxt {
-    flex-basis: 25%;
+.greenbutton {
+    padding: 12px 20px;
+    width: 143px;
+    color: white;
+    background-color: #0A3641;
+    margin-left: 10px;
+    border: none;
 }
+
+.addtocart {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.jacketimg {
+    width: 300px;
+    order: 1;
+}
+.line {
+    order: 3;
+}
+.jackettxt {
+    width: 300px;
+    order: 4;
+}
+
 @media only screen and (max-width: 1200px) {
     
     .searchbar {
@@ -206,6 +227,21 @@ h1 {
         margin: 0px 50px;
     }
 
+    .jacketcontent {
+        max-width: 90%;
+    }
+    .jacketbtns {
+        padding: 0 100px;
+        order: 3
+    }
+
+    .jackettxt {
+        order: 2;
+    }
+
+    .line {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -239,6 +275,21 @@ h1 {
     .prodbox img {
         width: 200px;
         margin: 0px 20px;
+    }
+
+    .jacketcontent {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .jacketbtns {
+        padding: 0;
+        order: 2;
+        margin: 20px 100px;
+    }
+
+    .jackettxt {
+        order: 3
     }
 
 }
