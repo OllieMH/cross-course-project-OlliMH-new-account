@@ -6,7 +6,7 @@ body {
 }
 
 #home {
-    background: url("../images/bgimg.jpeg") no-repeat center top;
+    background: url("../images/bgimg.jpg") no-repeat center top;
     background-size: cover;
     height: 100vh;
 }
@@ -133,7 +133,7 @@ h1 {
 /*Products page*/
 
 #products {
-    background: url("../images/bgimg_blur.png") no-repeat center top;
+    background: url("../images/bgimg_blur.jpg") no-repeat center top;
     background-size: cover;
     min-height: 100vh;
 }
@@ -233,7 +233,7 @@ h1 {
 /*Checkout success page*/
 
 #checkoutsuccess {
-    background: url("../images/bgimg_blur.png") no-repeat;
+    background: url("../images/bgimg_blur.jpg") no-repeat;
     background-size: cover;
     min-height: 130vh;
     overflow: hidden;
