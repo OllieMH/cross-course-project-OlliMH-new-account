@@ -240,6 +240,7 @@ h1 {
 .contactcontent {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 1200px) {
