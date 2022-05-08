@@ -41,7 +41,42 @@
     </div>
     <main>
       <h1>Checkout</h1>
-      <a href="checkoutsuccess.html"><button class="greenbutton">Buy</button></a>
+      <div class="checkoutcontent">
+        <div class="checkoutform">
+          <form action="checkout">
+            <button class="redbutton">Member Checkout</button>
+            <button class="redbutton">Guest Checkout</button>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <input type="text" placeholder="Street Address" class="fullwidthform">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Postal Code">
+            <button class="redbutton">Express Shipping <br>1-2 day, 50,-</button>
+            <button class="redbutton">Normal shipping <br>3-5 day, FREE.</button>
+          </form>
+          <a href="checkoutsuccess.html"><button class="greenbutton buybtn">Continue</button></a>
+        </div>
+        <div class="line chline"><img src="images/line.svg" alt="Line"></div>
+        <div class="ordersummary">          
+          <div class="chcart">
+            <div class="chcarttxt">
+              <h2>Cart</h2>
+              <h3>Rain jacket</h3>
+              <p>Medium <br>Blue <br>1500,- NOK</p>
+            </div>
+            <div class="chcartimg">
+              <a href="jacket.html"><img src="images/jacket.png" alt="Image of rain jacket"></a>
+            </div>
+          </div>
+          <div class="checkouttxt">
+            <h2 class="fullwidthform">Order Summary</h2>
+            <p>Subtotal</p><p>1500,- NOK</p>
+            <p>Taxes</p><p>-</p>
+            <p>Shipping</p><p>-</p>
+            <h3>Total</h3><h3>1500,- NOK</h3>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

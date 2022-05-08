@@ -190,6 +190,10 @@ h1 {
     width: 300px;
     order: 1;
 }
+
+.jacketimg img {
+    width: 300px;
+}
 .line {
     order: 3;
 }
@@ -241,6 +245,95 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+}
+
+address {
+    font-style: normal;
+    line-height: 4;
+}
+
+#formtxt {
+    margin-left: 5px;
+}
+
+#mail {
+    padding: 5px 70px 5px 5px;
+    margin: 5px;
+}
+
+#message {
+    padding: 5px 70px 100px 5px;
+    margin: 5px;
+}
+
+.checkoutcontent {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkoutform form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.checkoutform input {
+    height: 30px;
+    width: 100%;
+}
+
+.fullwidthform {
+    grid-column: 1 / 3;
+}
+
+.redbutton {
+    width: 100%;
+    height: 45px;
+    color: white;
+    background-color: #410A20;
+    border: none;
+    margin-left: 3px;
+}
+
+.buybtn {
+    margin-left: 20%;
+    margin-top: 15px;
+    width: 60%;
+}
+
+.ordersummary {
+    order: 3;
+    margin-top: -20px;
+    display: flex;
+    flex-flow: column;
+}
+
+.checkouttxt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 0;
+}
+
+.chline {
+    order: 2;
+}
+
+.chcart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.chcartimg {
+    margin-top: 75px;
+    margin-left: 10px;
+}
+
+.chcartimg img {
+    width: 100px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -349,6 +442,14 @@ h1 {
 
     .aboutcontent h1 {
         text-align: center;
+    }
+
+    .ordersummary {
+        order: 1;
+    }
+
+    .checkoutform {
+        order: 2
     }
 
 }
