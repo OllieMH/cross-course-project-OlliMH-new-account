@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../Javascript 1/oliver-hille-js1-ca"
+		},
+		{
+			"name": "js1-ca",
+			"path": "../Javascript 1/oliver-hille-js1-ca/js1-ca"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "oliver-hille-js1-ca"
+	}
+}
