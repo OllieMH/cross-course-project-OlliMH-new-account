@@ -60,18 +60,39 @@
 			<h1>Checkout</h1>
 			<div class="checkoutcontent">
 				<div class="checkoutform">
-					<form action="checkout">
-						<button class="redbutton">Member Checkout</button>
-						<button class="redbutton">Guest Checkout</button>
-						<input type="text" placeholder="First name" />
-						<input type="text" placeholder="Last name" />
-						<input type="text" placeholder="Street Address" class="fullwidthform" />
-						<input type="text" placeholder="City" />
-						<input type="text" placeholder="Postal Code" />
-						<button class="redbutton">Express Shipping <br />1-2 day, 50,-</button>
-						<button class="redbutton">Normal shipping <br />3-5 day, FREE.</button>
+					<form action="checkoutform">
+						<div class="checkoutgrid">
+							<button class="redbutton" type="button">Member Checkout</button>
+							<button class="redbutton" type="button">Guest Checkout</button>
+							<div class="input">
+								<input type="text" id="fname" placeholder="First name*" />
+								<div class="form-error" id="fnameError">*</div>
+							</div>
+							<div class="input">
+								<input type="text" id="lname" placeholder="Last name*" />
+								<div class="form-error" id="lnameError">*</div>
+							</div>
+							<div class="input">
+								<input type="text" id="email" placeholder="Email*" class="fullwidthform" />
+								<div class="form-error" id="emailError">Please enter a valid email</div>
+							</div>
+							<div class="input">
+								<input type="text" id="address" placeholder="Street Address*" class="fullwidthform" />
+								<div class="form-error" id="addressError">*</div>
+							</div>
+							<div class="input">
+								<input type="text" id="postal" placeholder="Postal Code*" />
+								<div class="form-error" id="postalError">*</div>
+							</div>
+							<div class="input">
+								<input type="text" id="city" placeholder="City*" />
+								<div class="form-error" id="cityError">*</div>
+							</div>
+							<button class="redbutton" type="button">Express Shipping <br />1-2 day, 50,-</button>
+							<button class="redbutton" type="button">Normal shipping <br />3-5 day, FREE.</button>
+						</div>
+						<a href="checkoutsuccess.html"><button class="greenbutton buybtn fullwidthform" type="button">Continue</button></a>
 					</form>
-					<a href="checkoutsuccess.html"><button class="greenbutton buybtn">Continue</button></a>
 				</div>
 				<div class="line chline"><img src="images/line.svg" alt="Line" /></div>
 				<div class="ordersummary">
@@ -99,5 +120,6 @@
 				</div>
 			</div>
 		</main>
+		<script src="js/checkout.js"></script>
 	</body>
 </html>

@@ -39,7 +39,7 @@
 				<div class="header-icons">
 					<i class="mobile fa fa-search icon fa-xl"></i>
 					<i class="fa-solid fa-heart icon fa-xl"></i>
-					<a href="checkout.html"><i class="fa-solid fa-cart-shopping icon fa-xl"></i></a>
+					<a href="checkout.html"><i class="fa-solid fa-cart-shopping icon fa-xl" id="carticon"></i></a>
 					<i class="fa-solid fa-user icon fa-xl"></i>
 				</div>
 			</div>
@@ -65,23 +65,21 @@
 				<div class="jacketbtns">
 					<h2>Price: 1500,- NOK</h2>
 					<div class="jacketlabels">
-						<label for="size"></label>
-						<select name="size" id="size" class="greenbutton">
-							<option value="small">Size</option>
+						<label for="sizebtn"></label>
+						<select name="sizebtn" id="sizebtn" class="greenbutton">
 							<option value="small">Small</option>
 							<option value="medium">Medium</option>
 							<option value="large">Large</option>
 						</select>
-						<label for="color"></label>
-						<select name="color" id="color" class="greenbutton">
-							<option value="small">Color</option>
+						<label for="colorbtn"></label>
+						<select name="colorbtn" id="colorbtn" class="greenbutton">
 							<option value="red">Red</option>
 							<option value="yellow">Yellow</option>
 							<option value="blue">Blue</option>
 							<option value="green">Green</option>
 						</select>
 					</div>
-					<a href="checkout.html"><button class="addtocart greenbutton">Add to cart</button></a>
+					<button class="addtocart greenbutton" type="button" id="addtocart">Add to cart</button>
 				</div>
 				<div class="line"><img src="images/line.svg" alt="Line" /></div>
 				<div class="jackettxt">
@@ -92,5 +90,6 @@
 				</div>
 			</div>
 		</main>
+		<script src="js/product.js"></script>
 	</body>
 </html>

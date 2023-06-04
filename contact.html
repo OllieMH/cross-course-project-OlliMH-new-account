@@ -39,7 +39,7 @@
 				<div class="header-icons">
 					<i class="mobile fa fa-search icon fa-xl"></i>
 					<i class="fa-solid fa-heart icon fa-xl"></i>
-					<a href="checkout.html"><i class="fa-solid fa-cart-shopping icon fa-xl"></i></a>
+					<a href="checkout.html" title="Checkout"><i class="fa-solid fa-cart-shopping icon fa-xl"></i></a>
 					<i class="fa-solid fa-user icon fa-xl"></i>
 				</div>
 			</div>
@@ -71,19 +71,23 @@
 						Address: Somewhere 55, Random City
 					</address>
 				</div>
-				<div class="contactform">
+				<div class="contactform" id="contactform">
 					<span id="formtxt">Send us a message!</span>
 					<form action="contactform">
-						<label for="mail"></label>
-						<input type="text" id="mail" name="mail" placeholder="Your email..." />
-						<br />
-						<label for="message"></label>
-						<input type="text" id="message" name="message" placeholder="Your message..." />
-						<br />
-						<input type="submit" value="Send" class="greenbutton" />
+						<div class="input">
+							<input type="text" id="mail" name="mail" placeholder="Your email..." />
+							<div class="form-error" id="mailError">Please enter a valid email</div>
+						</div>
+						<div class="input">
+							<input type="text" id="message" name="message" placeholder="Your message..." />
+							<div class="form-error" id="messageError">The message must be minimum 10 characters</div>
+						</div>
+						<button class="greenbutton" type="button">Send</button>
+						<div class="confirmation"></div>
 					</form>
 				</div>
 			</div>
 		</main>
+		<script src="js/contact.js"></script>
 	</body>
 </html>
